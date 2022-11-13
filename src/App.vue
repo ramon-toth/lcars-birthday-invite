@@ -125,11 +125,12 @@ export default {
 
     const titles = [
       // 'Chin\'toka Star System',
-      'Tactical Cartography',
-      'Stellar Cartography',
-      'Long Range Scan',
-      'Astrometrics',
-      'Astrometrics Lab',
+      'Incoming Transmission'
+      // 'Tactical Cartography',
+      // 'Stellar Cartography',
+      // 'Long Range Scan',
+      // 'Astrometrics',
+      // 'Astrometrics Lab',
       // 'Cerritos Operations',
       // 'Master Systems Display',
       // 'Communicator Transponder Scan'

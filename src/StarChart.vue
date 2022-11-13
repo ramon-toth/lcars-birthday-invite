@@ -65,9 +65,9 @@
         <div class="label-text">{{ item.label }}</div>
       </div>
     </div>
-    <ForwardScanner v-if="type === 'nav'" />
-    <StarCoords v-if="type === 'nav'" />
-    <InspectBracket v-if="type === 'planet'" />
+    <!-- <ForwardScanner v-if="type === 'nav'" />
+    <StarCoords v-if="type === 'nav'" /> -->
+    <InspectBracket />
   </div>
 </template>
 

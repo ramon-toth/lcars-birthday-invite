@@ -29,8 +29,8 @@
         <InspectBracketTL :width="size" position="bottomleft" />
       </div>
       <div class="inspect-bracket-content">
-        <PlanetView3d v-if="isFancy === true" :planet="planet" />
-        <PlanetView v-else :planet="planet" />
+        <!-- <PlanetView3d v-if="isFancy === true" :planet="planet" /> -->
+        <PlanetView  :planet="planet" />
       </div>
       <div class="inspect-bracket-right">
         <InspectBracketTL :width="size" position="topright" />
@@ -77,7 +77,7 @@ export default {
     const isFancy = Math.random() > 0.25
     // Set to number of planet images I have
     const select = isFancy ? 15 : 7
-    const planet = Math.floor(Math.random() * select)
+    const planet = 1
     return {
       isFancy,
       planet
@@ -92,6 +92,8 @@ export default {
 </script>
 
 <style scoped>
+
+
 .inspect-bracket-container {
   position: absolute;
   top: 0;
@@ -112,16 +114,16 @@ export default {
 .inspect-bracket {
   position: relative;
   z-index: 1;
-  width: 80%;
+  width: 96%;
   height: 80%;
   max-width: calc(45vh * 1.5);
-  max-height: 45vh;
+  max-height: 60vh;
   display: flex;
 }
 
 @media screen and (orientation: portrait) {
   .inspect-bracket {
-    max-height: 32vh;
+    max-height: 60vh;
   }
 }
 
